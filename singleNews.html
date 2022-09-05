@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../styles/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="header">
+                <div id="logo"><a href="index.html"><img class="logo" src="../images/logo.png"></a></div>
+                <div id="shadow"> </div>
+        
+                <div id="topright">
+        
+                    <a href="allNews.html">Новини</a>
+                    <div class="topmenu"></div>
+        
+                    <a class="search1" href=""><img class="search" src="../images/search.png" width="25"></a>
+        
+                    <a class="search" href="">Търси</a>
+                    <div class="topmenu"></div>
+        
+                    <a href=""><img class="tel" src="../images/tel.png" width="25"></a>
+                    <a class="telNumber" href="">+359 89 430 0985</a>
+                    <div class="topmenu"></div>
+        
+                    <a href=""><img class="you" src="../images/youtube.png" width="25"></a>
+                    <a href=""><img class="face" src="../images/facebook.png" width="25"></a>
+                    <a href=""><img class="in" src="../images/in.png" width="25"></a>
+                    <a href=""><img class="mail" src="../images/mail.png" width="25"></a>
+                    <a href=""><img class="line" src="../images/line.png"></a>
+                    <a href=""><img class="EN" src="../images/EN.png" width="20"></a>
+                </div>
+        
+                <div id="menulinks">
+                    <a href="">ЗА НАС</a>
+                    <div class="menuline"></div>
+                    <a href="pageKoha.html">СИСТЕМА КОХА</a>
+                    <div class="menuline"></div>
+                    <a href="pageKoha.html">БИБЛИОГРАФСКИ СЪРВЪР</a>
+                    <div class="menuline"></div>
+                    <a href="pageKoha.html">RFID ТЕХНОЛОГИИ</a>
+                    <div class="menuline"></div>
+                    <a href="">РЕАЛИЗАЦИИ</a>
+                    <div class="menuline"></div>
+                    <a href="contacts.html">КОНТАКТИ</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="content-size">
+            <div class="col-sm-12 col-lg-5">
+                <div class="viewgallery">
+                    <img src="../images/1.jpg" id="expandedImg1" onclick="openModal(this.id)">
+                </div>
+                <div id="myModal-1" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="../images/1.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="../images/2.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="../images/3.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="../images/4.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="../images/5.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="../images/6.jpg" style="width:100%">
+                        </div>
+
+                        <!-- Next/previous controls -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="carousel-gallery-container-1" class="carousel slide">
+                        <div class="carousel-inner" role="listbox" id="carousel-gallery">
+                            <div class="carousel-item active">
+                                <div class="col" id="gallery">
+                                    <img src="../images/1.jpg" onclick="imgGalleryTab1(this);currentSlide(1)">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col" id="gallery">
+                                    <img src="../images/2.jpg" onclick="imgGalleryTab1(this);currentSlide(2)">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col" id="gallery">
+                                    <img src="../images/3.jpg" onclick="imgGalleryTab1(this);currentSlide(3)">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col" id="gallery">
+                                    <img src="../images/4.jpg" onclick="imgGalleryTab1(this);currentSlide(4)">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col" id="gallery">
+                                    <img src="../images/5.jpg" onclick="imgGalleryTab1(this);currentSlide(5)">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col" id="gallery">
+                                    <img src="../images/6.jpg" onclick="imgGalleryTab1(this);currentSlide(6)">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carousel-gallery-container-1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carousel-gallery-container-1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-7">
+                <h1><b>Новина със следното заглавие. Може и да е на два реда</b></h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Vel fringilla est ullamcorper eget nulla facilisi. At imperdiet dui accumsan
+                    sit amet nulla facilisi. Odio pellentesque diam volutpat commodo sed egestas egestas. Tellus rutrum
+                    tellus pellentesque eu tincidunt. Vel pretium lectus quam id leo. Arcu risus quis varius quam. Urna
+                    duis convallis convallis tellus id interdum velit laoreet. Id donec ultrices tincidunt arcu non.
+                    Feugiat scelerisque varius morbi enim nunc faucibus. Ultricies tristique nulla aliquet enim. Ac
+                    turpis egestas maecenas pharetra convallis posuere morbi. Odio ut sem nulla pharetra. Mattis rhoncus
+                    urna neque viverra justo nec. Lectus quam id leo in.
+                </p>
+                <p>
+                    Lacinia at quis risus sed vulputate odio. Nam at lectus urna duis convallis convallis tellus id.
+                    Malesuada nunc vel risus commodo. Ac tincidunt vitae semper quis lectus. Tempus quam pellentesque
+                    nec nam aliquam. Sed euismod nisi porta lorem mollis aliquam. Urna et pharetra pharetra massa. Urna
+                    neque viverra justo nec ultrices dui sapien eget mi. Mattis aliquam faucibus purus in massa tempor
+                    nec feugiat. Eget egestas purus viverra accumsan in nisl. Auctor elit sed vulputate mi sit. Nullam
+                    eget felis eget nunc lobortis mattis aliquam faucibus purus. Libero justo laoreet sit amet.
+                </p>
+            </div>
+        </div>
+        <div class="row" id="content-size">
+            <div class="col-sm-12 col-lg-7">
+                <h1><b>Вътрешно заглавие. Друга снимка</b></h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Vel fringilla est ullamcorper eget nulla facilisi. At imperdiet dui accumsan
+                    sit amet nulla facilisi. Odio pellentesque diam volutpat commodo sed egestas egestas. Tellus rutrum
+                    tellus pellentesque eu tincidunt. Vel pretium lectus quam id leo. Arcu risus quis varius quam. Urna
+                    duis convallis convallis tellus id interdum velit laoreet. Id donec ultrices tincidunt arcu non.
+                    Feugiat scelerisque varius morbi enim nunc faucibus. Ultricies tristique nulla aliquet enim. Ac
+                    turpis egestas maecenas pharetra convallis posuere morbi. Odio ut sem nulla pharetra. Mattis rhoncus
+                    urna neque viverra justo nec. Lectus quam id leo in.
+                </p>
+                <p>
+                    Lacinia at quis risus sed vulputate odio. Nam at lectus urna duis convallis convallis tellus id.
+                    Malesuada nunc vel risus commodo. Ac tincidunt vitae semper quis lectus. Tempus quam pellentesque
+                    nec nam aliquam. Sed euismod nisi porta lorem mollis aliquam. Urna et pharetra pharetra massa. Urna
+                    neque viverra justo nec ultrices dui sapien eget mi. Mattis aliquam faucibus purus in massa tempor
+                    nec feugiat. Eget egestas purus viverra accumsan in nisl. Auctor elit sed vulputate mi sit. Nullam
+                    eget felis eget nunc lobortis mattis aliquam faucibus purus. Libero justo laoreet sit amet.
+                </p>
+            </div>
+            <div class="col-sm-12 col-lg-5">
+                <div class="viewgallery">
+                    <img src="../images/1.jpg" id="expandedImg2" onclick="openModal(this.id)">
+                </div>
+                <div id="myModal-2" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="../images/1.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="../images/2.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="../images/3.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="../images/4.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="../images/5.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="../images/6.jpg" style="width:100%">
+                        </div>
+
+                        <!-- Next/previous controls -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="carousel-gallery-container-2" class="carousel slide">
+                        <div class="carousel-inner" role="listbox" id="carousel-gallery">
+                            <div class="carousel-item active">
+                                <div class="col" id="gallery">
+                                    <img src="../images/1.jpg" onclick="imgGalleryTab2(this);currentSlide(1)">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col" id="gallery">
+                                    <img src="../images/2.jpg" onclick="imgGalleryTab2(this);currentSlide(2)">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col" id="gallery">
+                                    <img src="../images/3.jpg" onclick="imgGalleryTab2(this);currentSlide(3)">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col" id="gallery">
+                                    <img src="../images/4.jpg" onclick="imgGalleryTab2(this);currentSlide(4)">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col" id="gallery">
+                                    <img src="../images/5.jpg" onclick="imgGalleryTab2(this);currentSlide(5)">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col" id="gallery">
+                                    <img src="../images/6.jpg" onclick="imgGalleryTab2(this);currentSlide(6)">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carousel-gallery-container-2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carousel-gallery-container-2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="div" id="video2">
+                <span class="Present">ПРЕДСТВЯМЕ</span>
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                <h1> Заглавие към видеоновина </h1>
+                <p> Nullam id elementum dui. Vestibulum efficitur lacinia lobortis.
+                    Etiam hendrerit laoreet enim,
+                    vel porttitor orci semper pellentesque.
+                    In malesuada metus in augue pretium, non blandit ipsum vestibulum.
+
+                    Curabitur eget commodo lorem. Etiam gravida mattis tortor.
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                    per inceptos himenaeos. Aenean ullamcorper, nisi quis ultricies
+                    rutrum,
+                    ligula nisi vestibulum ligula, eget faucibus augue sem ac sapien.
+                    Vestibulum dictum libero vel augue facilisis, a sagittis justo
+                    consequat.
+                    <span class="video-text"></span>Sed porttitor fermentum semper. Donec a nibh sit amet massa
+                    efficitur
+                    semper.
+                    Etiam pellentesque augue ut lectus pulvinar, at efficitur enim tempus.
+                    Vestibulum pretium, lorem quis vulputate tincidunt, ipsum ex auctor
+                    quam,
+                    ut consequat eros leo id ipsum.</span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="div" id="novini">
+
+                <div class="row">
+                    <h1><b>НОВИНИ</b> </h1>
+                </div>
+                <div class="row" id="red">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card" id="karta">
+                            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe>
+                            <div class="card-body">
+                                <h2 class="card-title">Интеграцията на система КОХА започва с анализ на
+                                    изходните данни, внедрени системи и обучение на персонала</h2>
+                                <div class="date">20.05.2020г.</div>
+                                <span class="city">София<br><br></span>
+                                <p id="s1">
+                                    Кратко резюме...Кратко резюме...Кратко резюме...Кратко
+                                    резюме...Кратко резюме...<br>Кратко резюме...Кратко резюме...Кратко
+                                    резюме...<br>Кратко резюме...Кратко резюме...Кратко резюме...Кратко
+                                    резюме...<br>Кратко резюме...Кратко резюме...Кратко резюме...Кратко
+                                    резюме...</p>
+
+
+
+                                <div id="butonProcheti">
+                                    <p style="margin-top:10px;"> ПРОЧЕТИ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card" id="karta1">
+                            <iframe height="440" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe>
+
+                            <div class="card-body">
+                                <h2 class="card-title">Интеграцията на система КОХА започва с анализ на
+                                    изходните данни, внедрени системи и обучение на персонала</h2>
+                                <p id="s1">20.05.2020г.<br>
+                                    София<br><br>
+                                    Кратко резюме...Кратко резюме...Кратко резюме...Кратко
+                                    резюме...Кратко резюме...<br>Кратко резюме...Кратко резюме...Кратко
+                                    резюме...<br>Кратко резюме...Кратко резюме...Кратко резюме...Кратко
+                                    резюме...<br>Кратко резюме...Кратко резюме...Кратко резюме...Кратко
+                                    резюме...</p>
+                                <div id="butonProcheti">
+                                    <p style="margin-top:10px;"> ПРОЧЕТИ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="content-size">
+            <h1><b>СВЪРЖЕТЕ СЕ С НАС <a id="formcontacts" href="">Към контакти</a></b></h1>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <form>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-6" id="forma">
+                            <input type="text" name="Names" placeholder="Име и фамилия*" class="form-control" id="name"
+                                required>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6" id="forma">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="E-mail*"
+                                required>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6" id="forma">
+                            <input type="text" name="Phone" placeholder="Телефон*" class="form-control" id="phone"
+                                required>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6" id="forma">
+                            <input type="text" name="Theme" placeholder="Тема*" class="form-control" id="theme"
+                                required>
+                        </div>
+                        <div class="col-12" id="forma">
+                            <textarea name="Message" placeholder="Съобщение*" class="form-control" id="Messagebox"
+                                required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <input type="checkbox" name="ToS" class="form-check-input" id="custom-check" required>
+                            <label class="form-check-label" for="custom-check">
+                                Default checkbox
+                            </label>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-5">
+                            <!-- google recaptcha -->
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-7">
+                            <input type="submit" value="изпрати" class="btn-form-submit" id="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="phone-number-contact-container">
+                    <img src="../images/form-tel.png" class="img-contact">
+                    <div class="phone-number-contact">
+                        <ul>
+                            <li class="tel-img"><a class="tel" href="tel:0894300985">+359 89 430 0985</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- end of container -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="../javascript/js-main.js"></script>
+</body>
+
+</html>
