@@ -1,0 +1,630 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>index</title>
+	<LINK REL=StyleSheet HREF="../styles/styles.css" TYPE="text/css" MEDIA=screen>
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<style>
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			font-family:Noah;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container-fluid" id="header1">
+		<div id="header">
+			<div class="row">
+				<div class="col-3 col-xl-3">
+					<div id="logo"><a href="index.html"><img src="../images/logo.png"></a></div>  
+					<div id="resp-logo"><a href="index.html"><img src="../images/resp-logo.png"></a></div>      
+				</div>
+				<div class="col-9 col-xl-9">
+					<div class="row">
+						<div id="topright">
+
+							<a href="allNews.html">Новини</a>
+							
+				
+							<a class="search1" href=""><img class="search" src="../images/search.png" width="25"></a>
+				
+							<a class="search" href="">Търси</a>
+							
+				
+							<a href=""><img class="tel" src="../images/tel.png" width="25"></a>
+							<a class="telNumber" href="">+359 89 430 0985</a>
+							
+				
+							<a href=""><img class="you" src="../images/youtube.png" width="25"></a>
+							<a href=""><img class="face" src="../images/facebook.png" width="25"></a>
+							<a href=""><img class="in" src="../images/in.png" width="25"></a>
+							<a href=""><img class="mail" src="../images/mail.png" width="25"></a>
+							<a href=""><img class="line" src="../images/line.png"></a>
+							<a href=""><img class="EN" src="../images/EN.png" width="20"></a>
+						</div>
+					</div>
+					<div class="row">
+						<div id="menulinks">
+							<a href="">ЗА НАС</a>
+							<div class="menuline"></div>
+							<a href="">СИСТЕМА КОХА</a>
+							<div class="menuline"></div>
+							<a href="">БИБЛИОГРАФСКИ СЪРВЪР</a>
+							<div class="menuline"></div>
+							<a href="">RFID ТЕХНОЛОГИИ</a>
+							<div class="menuline"></div>
+							<a href="">РЕАЛИЗАЦИИ</a>
+							<div class="menuline"></div>
+							<a href="">КОНТАКТИ</a>
+						</div>
+					</div>
+					<div id="resp-images">
+						<div id="resp-img1"><a href="tel:0884102869"><img src="../images/resp-tel.png"></a></div>
+						<div id="resp-img2"><a href="index.html"><img src="../images/resp-search.png"></a></div>
+					   <div id="resp-img3"><a href="javascript:void(0);" onclick="HambMenu(),ImageChange()"><img src="../images/ham-menu.png"></a></div>
+					</div>
+						<div class="col-12">
+					   <div id="myLinks">
+								<div class="row"><a href="">ЗА НАС</a></div>
+								<div class="row"><a href="../pages/pageKoha.html">СИСТЕМА КОХА</a></div>
+								<div class="row"><a href="../pages/pageKoha.html">БИБЛИОГРАФСКИ СЪРВЪР</a></div>
+								<div class="row"><a href="../pages/pageKoha.html">RFID ТЕХНОЛОГИИ</a></div>
+								<div class="row"><a href="">РЕАЛИЗАЦИИ</a></div>
+								<div class="row"><a href="../pages/allNews.html">НОВИНИ</a></div>
+								<div class="row"><a href="../pages/contacts.html">КОНТАКТИ</a></div>
+							</div>
+						
+					</div>
+					</div> 
+					</div>
+			</div>
+				
+			</div>
+		
+	
+		
+	<script>
+		function HambMenu() {
+		  var x = document.getElementById("myLinks");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+		  }
+		}
+		  function ImageChange(){
+			const img= documnt.getElementById('resp-img3');
+			let toggle=true;
+			img.addEventListener('click',function(){
+				toggle=!toggle;
+				if(toggle){
+					img.src='..\\images\\ham-menu.png'; }
+					else {
+						img.src='..\\images\\ham-menu-onclick.png';
+					}
+					
+				})
+		  }
+		  
+		
+		
+		</script>
+
+	<div class="row">
+		<div class="col">
+		  <div id="carousel-main" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+			  <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="0" class="active" aria-current="true"
+				aria-label="Slide 1"></button>
+			  <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			  <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			  <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="3" aria-label="Slide 4"></button>
+			  <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="4" aria-label="Slide 5"></button>
+			  <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="5" aria-label="Slide 6"></button>
+			  <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="6" aria-label="Slide 7"></button>
+			</div>
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<img src="../images/imgban1.jpg" class="d-block w-100">
+				<div class="carousel-caption">
+				  <p>text1</p>
+				</div>
+				<div class="btn-info-position">
+				  <a class="btn-info" href="#">виж повече</a>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<img src="../images/imgban2.jpg" class="d-block w-100">
+				<div class="carousel-caption">
+				  <p>text2</p>
+				</div>
+				<div class="btn-info-position">
+				  <a class="btn-info" href="#">виж повече</a>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<img src="../images/imgban3.jpg" class="d-block w-100">
+				<div class="carousel-caption">
+				  <p>text3</p>
+				</div>
+				<div class="btn-info-position">
+				  <a class="btn-info" href="#">виж повече</a>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<img src="../images/imgban4.jpg" class="d-block w-100">
+				<div class="carousel-caption">
+				  <p>text4</p>
+				</div>
+				<div class="btn-info-position">
+				  <a class="btn-info" href="#">виж повече</a>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<img src="../images/imgban5.jpg" class="d-block w-100">
+				<div class="carousel-caption">
+				  <p>text5</p>
+				</div>
+				<div class="btn-info-position">
+				  <a class="btn-info" href="#">виж повече</a>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<img src="../images/imgban6.jpg" class="d-block w-100">
+				<div class="carousel-caption">
+				  <p>text6</p>
+				</div>
+				<div class="btn-info-position">
+				  <a class="btn-info" href="#">виж повече</a>
+				</div>
+			  </div>
+			  <div class="carousel-item">
+				<img src="../images/imgban7.jpg" class="d-block w-100">
+				<div class="carousel-caption">
+				  <p>text7</p>
+				</div>
+				<div class="btn-info-position">
+				  <a class="btn-info" href="#">виж повече</a>
+				</div>
+			  </div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carousel-main" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carousel-main" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+			</button>
+		  </div>
+		</div>
+	  </div>
+	
+
+	<div class="container-fluid" style="padding-left: 0;
+	padding-right: 0;">
+
+		<div id="koha">
+			<div class="row">
+				<h1>СИСТЕМА КОХА</h1>
+			</div>
+			<div class="row" id="koha2">
+				<div class="col-12 col-md-5">
+					<img src="../images/system.png" class="img-fluid">
+				</div>
+				<div class="col-12 col-md-7">
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas
+						tristique sodales. Phasellus tincidunt neque feugiat, iaculis lorem non,
+						consequat orci. Phasellus sit amet pulvinar nulla. Aliquam porttitor tortor
+						non consequat lacinia. Aliquam ut mi accumsan, vehicula nisi cursus, dictum
+						ligula. Donec quis pharetra augue. Sed auctor nulla nulla, non vestibulum
+						nunc auctor nec. Etiam libero neque, malesuada maximus justo sit amet,
+						sollicitudin ornare erat. Cras eget dolor nec sapien malesuada ultricies id
+						vitae eros. Maecenas scelerisque nulla a risus egestas mattis. Nam egestas
+						metus eget condimentum congue.<br><br>
+						Sed eget semper neque, at mattis enim. Fusce id iaculis dui. Nulla facilisi.
+						Nunc rutrum tristique metus, ac maximus arcu sagittis sit amet. Sed eu
+						porttitor lorem. Donec eget auctor sapien. Phasellus accumsan sodales
+						turpis. Nullam efficitur sagittis lectus, ac efficitur enim gravida a.<br><br>
+						<span>Ut lobortis nulla at suscipit blandit. Ut faucibus nisi massa, in dignissim
+						ipsum imperdiet sed. Integer vitae neque felis. Curabitur molestie congue
+						sem et aliquam. Nulla fringilla libero nec nulla tempor, sit amet molestie
+						erat condimentum. Ut vehicula vulputate eros, eget semper leo dictum ac.
+						Suspendisse eget euismod turpis. Fusce a nulla metus. Fusce in aliquet
+						neque, sed luctus ipsum. Fusce consequat euismod velit a faucibus. Donec
+						luctus eros non mollis porta. Mauris varius dolor at mi blandit blandit.
+						Curabitur vulputate egestas accumsan. Praesent posuere, est sit amet dictum
+						sagittis, dui diam tempus ante, lacinia tincidunt neque turpis consectetur
+						enim. Aliquam vel dui quis augue ultricies ornare quis ut turpis.<br><br>
+						Integer sed ipsum a urna iaculis sollicitudin et scelerisque quam. Proin sed
+						mollis quam. Curabitur malesuada porta leo, sit amet euismod lacus fermentum
+						sit amet. Sed convallis sed elit et congue. Aliquam a tempus quam, nec
+						tristique ante. Curabitur eu efficitur ex. Praesent tellus arcu, ultrices
+						quis turpis in, rutrum porttitor nisl. Pellentesque rutrum, felis a
+						ultricies rutrum, nisi sem auctor est, eu congue ex dolor ac lorem. Mauris
+						lacinia est in velit auctor suscipit. Aliquam ullamcorper massa risus, et
+						feugiat nisl tempor at. Vestibulum dignissim velit scelerisque libero
+						malesuada, vitae tincidunt neque aliquet. Praesent eu mattis augue. Quisque
+						sed lectus arcu. Nulla eget feugiat massa.<br><br>
+						Quisque lacinia urna ipsum, in viverra neque egestas nec. Sed pellentesque
+						dolor vitae urna ultrices venenatis. Sed mauris <br><br></span> </p>
+						<a id="vij" href="pageKoha.html">
+							<div id="vijPoveche">
+								<h2>ВИЖ ПОВЕЧЕ <h2>
+							</div>
+						</a>
+				</div>
+			</div>
+			
+
+		</div>
+	</div>
+
+	<div class="container-fluid" style="padding-left: 0;
+	padding-right: 0;">
+		<div id="z39" >
+		<div class="row" id="z39-2">
+			<div class="col-12 col-md-5" id="column1">
+
+				<h1 > СЪВРЪВ Z39</h1>
+
+
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas
+					tristique sodales. Phasellus tincidunt neque feugiat, iaculis lorem non,
+					consequat orci. Phasellus sit amet pulvinar nulla. Aliquam porttitor
+					tortor non consequat lacinia. Aliquam ut mi accumsan, vehicula nisi
+					cursus, dictum ligula. Donec quis pharetra augue. Sed auctor nulla nulla,
+					non vestibulum nunc auctor nec. Etiam libero neque, malesuada maximus
+					justo sit amet, sollicitudin ornare erat. Cras eget dolor nec sapien
+					malesuada ultricies id vitae eros. Maecenas scelerisque nulla a risus
+					egestas mattis. Nam egestas metus eget condimentum congue.<br><br>
+					Sed eget semper neque, at mattis enim. Fusce id iaculis dui. Nulla
+					facilisi. Nunc rutrum tristique metus, ac maximus arcu sagittis sit amet.
+					Sed eu porttitor lorem. Donec eget auctor sapien. Phasellus accumsan
+					sodales turpis. Nullam efficitur sagittis lectus, ac efficitur enim
+					gravida a.<br><br>
+					Ut lobortis nulla at suscipit blandit. Ut faucibus nisi massa, in
+					dignissim ipsum imperdiet sed. Integer vitae neque felis. Curabitur
+					molestie congue sem et aliquam. Nulla fringilla libero nec nulla tempor,
+					sit amet molestie erat condimentum. Ut vehicula vulputate eros, eget
+					semper leo dictum ac. Suspendisse eget euismod turpis. Fusce a nulla
+					metus. Fusce in aliquet neque, sed luctus ipsum. Fusce consequat euismod
+					<br><br>
+				</p></div>
+				<a id="vij1" href="pageKoha.html" >
+					<div id="vijPoveche1">
+						<h2>ВИЖ ПОВЕЧЕ <h2>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-12 col-md-7" id="snimka" > <img src="../images/z39.png"  height="665" class="img-fluid"></div>
+
+		</div>
+	</div>
+	
+
+	<div class="container-fluid" style="padding-left: 0;
+	padding-right: 0;">
+
+		<div id="koha">
+			<div class="row">
+				<h1>RFID ТЕХНОЛОГИИ</h1>
+			</div>
+			<div class="row" id="koha2">
+				<div class="col-12 col-md-5">
+					<img src="../images/rfid.png"  height="670"class="img-fluid">
+				</div>
+				<div class="col-12 col-md-7">
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas
+						tristique sodales. Phasellus tincidunt neque feugiat, iaculis lorem non,
+						consequat orci. Phasellus sit amet pulvinar nulla. Aliquam porttitor
+						tortor non consequat lacinia. Aliquam ut mi accumsan, vehicula nisi
+						cursus, dictum ligula. Donec quis pharetra augue. Sed auctor nulla
+						nulla, non vestibulum nunc auctor nec. Etiam libero neque, malesuada
+						maximus justo sit amet, sollicitudin ornare erat. Cras eget dolor nec
+						sapien malesuada ultricies id vitae eros. Maecenas scelerisque nulla a
+						risus egestas mattis. Nam egestas metus eget condimentum congue.<br><br>
+						Sed eget semper neque, at mattis enim. Fusce id iaculis dui. Nulla
+						facilisi. Nunc rutrum tristique metus, ac maximus arcu sagittis sit
+						amet. Sed eu porttitor lorem. Donec eget auctor sapien. Phasellus
+						accumsan sodales turpis. Nullam efficitur sagittis lectus, ac efficitur
+						enim gravida a.<br><br>
+						<span>
+						Ut lobortis nulla at suscipit blandit. Ut faucibus nisi massa, in
+						dignissim ipsum imperdiet sed. Integer vitae neque felis. Curabitur
+						molestie congue sem et aliquam. Nulla fringilla libero nec nulla tempor,
+						sit amet molestie erat condimentum. Ut vehicula vulputate eros, eget
+						semper leo dictum ac. Suspendisse eget euismod turpis. Fusce a nulla
+						metus. Fusce in aliquet neque, sed luctus ipsum. Fusce consequat euismod
+						velit a faucibus. Donec luctus eros non mollis porta. Mauris varius
+						dolor at mi blandit blandit. Curabitur vulputate egestas accumsan.
+						Praesent posuere, est sit amet dictum sagittis, dui diam tempus ante,
+						lacinia tincidunt neque turpis consectetur enim. Aliquam vel dui quis
+						augue ultricies ornare quis ut turpis.<br><br>
+						Integer sed ipsum a urna iaculis sollicitudin et scelerisque quam. Proin
+						sed mollis quam. Curabitur malesuada porta leo, sit amet euismod lacus
+						fermentum sit amet. Sed convallis sed elit et congue. Aliquam a tempus
+						quam, nec tristique ante. Curabitur eu efficitur ex. Praesent tellus
+						arcu, ultrices quis turpis in, rutrum porttitor nisl. Pellentesque
+						rutrum, felis a ultricies rutrum, nisi sem auctor est, eu congue ex
+						dolor ac lorem. Mauris lacinia est in velit auctor suscipit. Aliquam
+						ullamcorper massa risus, et feugiat nisl tempor at. Vestibulum dignissim
+						velit scelerisque libero malesuada, vitae tincidunt neque aliquet.
+						Praesent eu mattis augue. Quisque sed lectus arcu. Nulla eget feugiat
+						massa.<br><br>
+						Quisque lacinia urna ipsum, in viverra neque egestas nec. Sed
+						pellentesque dolor vitae urna ultrices venenatis. Sed mauris velit,
+						ullamcorper eu interdum vitae, egestas at dolor. Morbi tempor iaculis
+						maximus. Donec consectetur tincidunt scelerisque. Pellentesque nec risus
+						nunc. Sed leo dui, consectetur id commodo nec, ultrices sit amet massa.
+						Nulla ac urna <br><br></span> </p>
+						<a id="vij" href="pageKoha.html">
+							<div id="vijPoveche">
+								<h2>ВИЖ ПОВЕЧЕ <h2>
+							</div>
+						</a>
+				</div>
+			</div>
+			
+
+		</div>
+	</div>
+
+	
+
+	<div class="container-fluid" id="novini">
+		
+		<div class="row" >
+			<h1><b>НОВИНИ</b> </h1>
+		</div>
+		<div class="row" id="red" >
+			<div class="col-12 col-md-6">
+	<div class="card" id="karta">
+		<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+		</iframe>
+		<div class="card-body">
+		  <h2 class="card-title">Интеграцията на система КОХА започва с анализ на
+			изходните данни, внедрени системи и обучение на персонала</h2>
+			<div class="date">20.05.2020г.</div>
+				<span class="city">София<br><br></span>
+				<p id="s1">
+				Кратко резюме...Кратко резюме...Кратко резюме...Кратко
+				резюме...Кратко резюме...<br>Кратко резюме...Кратко резюме...Кратко
+				резюме...<br>Кратко резюме...Кратко резюме...Кратко резюме...Кратко
+				резюме...<br>Кратко резюме...Кратко резюме...Кратко резюме...Кратко
+				резюме...</p>
+
+				
+				<a href="singleNews.html" class="procheti">
+				<div id="butonProcheti">
+					<p style="margin-top:10px;"> ПРОЧЕТИ</p>
+				</div></a>
+		  </div>
+		</div>
+		</div>
+		
+		
+		<div class="col-12 col-md-6">
+			<div class="card" id="karta1">
+				<iframe height="440" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+				</iframe>
+			
+				<div class="card-body" >
+				  <h2 class="card-title">Интеграцията на система КОХА започва с анализ на
+					изходните данни, внедрени системи и обучение на персонала</h2>
+					<p id="s1">20.05.2020г.<br>
+						София<br><br>
+						Кратко резюме...Кратко резюме...Кратко резюме...Кратко
+						резюме...Кратко резюме...<br>Кратко резюме...Кратко резюме...Кратко
+						резюме...<br>Кратко резюме...Кратко резюме...Кратко резюме...Кратко
+						резюме...<br>Кратко резюме...Кратко резюме...Кратко резюме...Кратко
+						резюме...</p>
+						<a href="singleNews.html" class="procheti"><div id="butonProcheti">
+							<p style="margin-top:10px;"> ПРОЧЕТИ</p>
+					</div></a>
+				  </div>
+				</div>
+	  </div>
+	</div>
+	</div>
+
+	<div class="container-fluid" id="video2">
+		<span class="Present">ПРЕДСТВЯМЕ</span>
+		<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+		<h1> Презентация на библиографска система КОХА </h1>
+		<p> Nullam id elementum dui. Vestibulum efficitur lacinia lobortis.
+			Etiam hendrerit laoreet enim,
+			vel porttitor orci semper pellentesque.
+			In malesuada metus in augue pretium, non blandit ipsum vestibulum.
+			
+			Curabitur eget commodo lorem. Etiam gravida mattis tortor.
+			Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+			per inceptos himenaeos. Aenean ullamcorper, nisi quis ultricies
+			rutrum,
+			ligula nisi vestibulum ligula, eget faucibus augue sem ac sapien.
+			Vestibulum dictum libero vel augue facilisis, a sagittis justo
+			consequat.
+			<span class="video-text"></span>Sed porttitor fermentum semper. Donec a nibh sit amet massa efficitur
+			semper.
+			Etiam pellentesque augue ut lectus pulvinar, at efficitur enim tempus.
+			Vestibulum pretium, lorem quis vulputate tincidunt, ipsum ex auctor
+			quam,
+			ut consequat eros leo id ipsum.</span></p>
+		</div>
+	
+
+	<div class="container">
+		<!-- certificate -->
+		<div class="row">
+			<h1><b>СЕРТИФИКАТИ</b></h1>
+
+			<div class="col">
+				<div class="imgCert"><a href="singleNews.html"> <img src="../images/imgban1.jpg" id="img-cert"></a></div>
+				<p><a class="cert-text" href="singleNews.html">Пълно име на сертификата</a></p>
+			</div>
+
+			<div class="col">
+				<div class="imgCert"><a href="singleNews.html"> <img src="../images/imgban2.jpg" id="img-cert"></a></div>
+				<p><a class="cert-text" href="singleNews.html">Пълно име на сертификата</a></p>
+			</div>
+
+		</div>
+		<!--end of certificate-->
+
+		<div class="row">
+			<div class="col" style="padding: 4%;"></div>
+		</div>
+
+		
+			<div class="row" id="content-size">
+			  <h1><b>СВЪРЖЕТЕ СЕ С НАС <a id="formcontacts" href="">Към контакти</a></b></h1>
+			  <div class="col-sm-12 col-md-12 col-lg-6">
+				<form>
+				  <div class="row">
+					<div class="col-sm-12 col-md-6 col-lg-6" id="forma">
+					  <input type="text" name="Names" placeholder="Име и фамилия*" class="form-control" id="name" required>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-6" id="forma">
+					  <input type="email" name="email" class="form-control" id="email" placeholder="E-mail*" required>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-6" id="forma">
+					  <input type="text" name="Phone" placeholder="Телефон*" class="form-control" id="phone" required>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-6" id="forma">
+					  <input type="text" name="Theme" placeholder="Тема*" class="form-control" id="theme" required>
+					</div>
+					<div class="col-12" id="forma">
+					  <textarea name="Message" placeholder="Съобщение*" class="form-control" id="Messagebox"
+						required></textarea>
+					</div>
+					<div class="col-12">
+					  <input type="checkbox" name="ToS" class="form-check-input" id="custom-check" required>
+					  <label class="form-check-label" for="custom-check">
+						Default checkbox
+					  </label>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-5">
+					  <!-- google recaptcha -->
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-7">
+					   <input type="submit" value="изпрати" class="btn-form-submit" id="submit"> 
+					</div>
+				  </div>
+				</form>
+			  </div>
+		
+			  <div class="col-sm-12 col-md-12 col-lg-6" id="contact-container">
+				<div class="phone-number-contact-container">
+				  <img src="images/form-tel.png" class="img-contact">
+				  <div class="phone-number-contact">
+					<ul>
+					  <li class="tel-img"><a class="tel" href="tel:0894300985">+359 89 430 0985</a> </li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div> <!-- end of contacts-->
+		</div>
+	</div>
+
+	<div class="footer-container">
+		<div class="footer">
+			<div class="footer-heading">
+				<h2>За Нас</h2>
+				<a href="#">За Нас</a>
+				<a href="#">Цели</a>
+				<a href="#">Реализирани Проекти</a>
+				<a href="#">Новини</a>
+				<a href="#">Полезни съвети</a>
+				<a href="#">Често задавани въпроси</a>
+			</div>
+
+			<div class="footer-heading">
+				<h2>СИСТЕМА КОХА </h2>
+				<a href="#">Описание</а>
+					<a href="#">Предимства</а>
+						<a href="#">Инстеграция</а>
+							<a href="#">Поддръжка</a>
+			</div>
+			<div class="footer-heading">
+				<h2>БИБЛИОГРАФСКИ СЪРВЪР</h2>
+				<a href="#">Описание</а>
+					<a href="#">Предимства</а>
+						<a href="#">Интеграция</а>
+							<a href="#">Поддръжка</a>
+			</div>
+			<div class="footer-heading">
+				<h2>RFID ТЕХНОЛОГИИ</h2>
+				<a href="#">Описание</а>
+					<a href="#">Предимства</а>
+						<a href="#">Интеграция</а>
+							<a href="#">Поддръжка</a>
+			</div>
+			<div class="footer-heading-row footer-5">
+				<h2>ПИШЕТЕ НИ:</h2>
+
+				<!-- Da se opravi -->
+				<a href="#"><img src="../Footer/ico1.png" alt="PlaceHolder1"></а>
+
+					<a href="#"><img src="../Footer/ico1.png" alt="PlaceHolder1"></а>
+
+						<a href="#"><img src="../Footer/ico1.png" alt="PlaceHolder1"></а>
+
+							<a href="#"><img src="../Footer/ico1.png" alt="PlaceHolder1"></a>
+			</div>
+			<div class="footer-heading-row footer-6">
+				<h2>ПОСЛЕДВАЙТЕ НИ:</h2>
+				<p><br><br><br><br>
+					<!-- Da se opravi -->
+					<a href="#"><img src="Footer/ico1.png" alt="PlaceHolder1"></a>
+
+					<a href="#"><img src="Footer/ico1.png" alt="PlaceHolder1"></а>
+
+						<a href="#"><img src="Footer/ico1.png" alt="PlaceHolder1"></a>
+			</div>
+			<div class="footer-heading footer-7">
+				<h2>ОФИС:</h2>
+				<a href="#">Адрес: Русе, 7000</а>
+					<a href="#">ул. "Родопи 8"</а>
+						<a href="#"><img src="Footer/ico1.png" alt="PlaceHolder1"> 978 885
+							7745, 087
+
+							910 5050, 088 910 5050</a>
+						<a href="#"><img src="Footer/ico1.png" alt="PlaceHolder1">
+							info@vipinovaitons.bg</a>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-heading footer-8">
+				<h2>СЕРВИЗ</h2>
+				<a href="#">Услуги</а>
+					<a href="#">Обслужване</а>
+						<a href="#">Запитване</a>
+			</div>
+			<div class="footer-heading footer-9">
+				<h2>Общи Условия</h2>
+				<a href="#">Общи условия за ползване</а>
+					<a href="#">Политика за опазване на личните данни</а>
+						<a href="#">Политики за бисквитките</a>
+
+			</div>
+			<div id="grad"></div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+
+</body>
+
+</html>
