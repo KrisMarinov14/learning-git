@@ -1,0 +1,449 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>allNews</title>
+        <LINK REL=StyleSheet HREF="../styles/styles.css" TYPE="text/css"
+            MEDIA=screen>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous">
+        <style>
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			font-family:Noah;
+		}
+	</style>
+    </head>
+
+    <body>
+        <div class="container-fluid" id="header1">
+            <div id="header">
+                <div class="row">
+                    <div class="col-3 col-xl-3">
+                        <div id="logo"><a href="index.html"><img src="../images/logo.png"></a></div>  
+                        <div id="resp-logo"><a href="index.html"><img src="../images/resp-logo.png"></a></div>      
+                    </div>
+                    <div class="col-9 col-xl-9">
+                        <div class="row">
+                            <div id="topright">
+    
+                                <a href="allNews.html">Новини</a>
+                                
+                    
+                                <a class="search1" href=""><img class="search" src="../images/search.png" width="25"></a>
+                    
+                                <a class="search" href="">Търси</a>
+                                
+                    
+                                <a href=""><img class="tel" src="../images/tel.png" width="25"></a>
+                                <a class="telNumber" href="">+359 89 430 0985</a>
+                                
+                    
+                                <a href=""><img class="you" src="../images/youtube.png" width="25"></a>
+                                <a href=""><img class="face" src="../images/facebook.png" width="25"></a>
+                                <a href=""><img class="in" src="../images/in.png" width="25"></a>
+                                <a href=""><img class="mail" src="../images/mail.png" width="25"></a>
+                                <a href=""><img class="line" src="../images/line.png"></a>
+                                <a href=""><img class="EN" src="../images/EN.png" width="20"></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="menulinks">
+                                <a href="">ЗА НАС</a>
+                                <div class="menuline"></div>
+                                <a href="">СИСТЕМА КОХА</a>
+                                <div class="menuline"></div>
+                                <a href="">БИБЛИОГРАФСКИ СЪРВЪР</a>
+                                <div class="menuline"></div>
+                                <a href="">RFID ТЕХНОЛОГИИ</a>
+                                <div class="menuline"></div>
+                                <a href="">РЕАЛИЗАЦИИ</a>
+                                <div class="menuline"></div>
+                                <a href="">КОНТАКТИ</a>
+                            </div>
+                        </div>
+                        <div id="resp-images">
+                            <div id="resp-img1"><a href="index.html"><img src="../images/resp-tel.png"></a></div>
+                            <div id="resp-img2"><a href="index.html"><img src="../images/resp-search.png"></a></div>
+                           <div id="resp-img3"><a href="javascript:void(0);" onclick="HambMenu(),ImageChange()"><img src="../images/ham-menu.png"></a></div>
+                        </div>
+                            <div class="col-12">
+                           <div id="myLinks">
+                                    <div class="row"><a href="">ЗА НАС</a></div>
+                                    <div class="row"><a href="../pages/pageKoha.html">СИСТЕМА КОХА</a></div>
+                                    <div class="row"><a href="../pages/pageKoha.html">БИБЛИОГРАФСКИ СЪРВЪР</a></div>
+                                    <div class="row"><a href="../pages/pageKoha.html">RFID ТЕХНОЛОГИИ</a></div>
+                                    <div class="row"><a href="">РЕАЛИЗАЦИИ</a></div>
+                                    <div class="row"><a href="../pages/allNews.html">НОВИНИ</a></div>
+                                    <div class="row"><a href="../pages/contacts.html">КОНТАКТИ</a></div>
+                                </div>
+                            
+                        </div>
+                        </div> 
+                        </div>
+                </div>
+                    
+                </div>
+            
+        
+            
+        <script>
+            function HambMenu() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+              function ImageChange(){
+                const img= documnt.getElementById('resp-img3');
+                let toggle=true;
+                img.addEventListener('click',function(){
+                    toggle=!toggle;
+                    if(toggle){
+                        img.src='..\\images\\ham-menu.png'; }
+                        else {
+                            img.src='..\\images\\ham-menu-onclick.png';
+                        }
+                        
+                    })
+              }
+              
+            
+            
+            </script>
+        <div class="div">
+            <div id="carouselExampleIndicators" class="carousel slide"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide
+                        1"></button>
+                    <button type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/imgban1.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/imgban2.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/imgban3.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/imgban4.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/imgban5.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/imgban6.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/imgban7.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="novini1" style="margin-top:50px;">
+
+            <div class="row">
+                <h1 id="zaglavie"><b>НОВИНИ</b></h1>
+            </div>
+            <div class="row" id="red">
+                <div class="col-12 col-md-6">
+                   <a href="singleNews.html" class="news"><div class="card" id="karta">
+                        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                        </iframe>
+                        <div class="card-body">
+                            <h2 class="card-title">Интеграцията на система КОХА
+                                започва с анализ на
+                                изходните данни, внедрени системи и обучение на
+                                персонала</h2>
+                            <div class="date">20.05.2020г.</div>
+                            <span class="city">София<br><br></span>
+                            <p id="s1">
+                                Кратко резюме...Кратко резюме...Кратко
+                                резюме...Кратко
+                                резюме...Кратко резюме...<br>Кратко
+                                резюме...Кратко резюме...Кратко
+                                резюме...<br>Кратко резюме...Кратко
+                                резюме...Кратко резюме...Кратко
+                                резюме...<br>Кратко резюме...Кратко
+                                резюме...Кратко резюме...Кратко
+                                резюме...</p>
+
+
+
+                            <div id="butonProcheti">
+                                <p style="margin-top:10px;"> ПРОЧЕТИ</p>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+
+
+                <div class="col-12 col-md-6">
+                    <a href="singleNews.html" class="news"><div class="card" id="karta">
+                         <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                         </iframe>
+                         <div class="card-body">
+                             <h2 class="card-title">Интеграцията на система КОХА
+                                 започва с анализ на
+                                 изходните данни, внедрени системи и обучение на
+                                 персонала</h2>
+                             <div class="date">20.05.2020г.</div>
+                             <span class="city">София<br><br></span>
+                             <p id="s1">
+                                 Кратко резюме...Кратко резюме...Кратко
+                                 резюме...Кратко
+                                 резюме...Кратко резюме...<br>Кратко
+                                 резюме...Кратко резюме...Кратко
+                                 резюме...<br>Кратко резюме...Кратко
+                                 резюме...Кратко резюме...Кратко
+                                 резюме...<br>Кратко резюме...Кратко
+                                 резюме...Кратко резюме...Кратко
+                                 резюме...</p>
+ 
+ 
+ 
+                             <div id="butonProcheti">
+                                 <p style="margin-top:10px;"> ПРОЧЕТИ</p>
+                             </div>
+                         </div>
+                     </div></a>
+                 </div>
+
+                 <div class="col-12 col-md-6">
+                    <a href="singleNews.html" class="news"><div class="card" id="karta">
+                         <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                         </iframe>
+                         <div class="card-body">
+                             <h2 class="card-title">Интеграцията на система КОХА
+                                 започва с анализ на
+                                 изходните данни, внедрени системи и обучение на
+                                 персонала</h2>
+                             <div class="date">20.05.2020г.</div>
+                             <span class="city">София<br><br></span>
+                             <p id="s1">
+                                 Кратко резюме...Кратко резюме...Кратко
+                                 резюме...Кратко
+                                 резюме...Кратко резюме...<br>Кратко
+                                 резюме...Кратко резюме...Кратко
+                                 резюме...<br>Кратко резюме...Кратко
+                                 резюме...Кратко резюме...Кратко
+                                 резюме...<br>Кратко резюме...Кратко
+                                 резюме...Кратко резюме...Кратко
+                                 резюме...</p>
+ 
+ 
+ 
+                             <div id="butonProcheti">
+                                 <p style="margin-top:10px;"> ПРОЧЕТИ</p>
+                             </div>
+                         </div>
+                     </div></a>
+                 </div>
+                 <div class="col-12 col-md-6">
+                    <a href="singleNews.html" class="news"><div class="card" id="karta">
+                         <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                         </iframe>
+                         <div class="card-body">
+                             <h2 class="card-title">Интеграцията на система КОХА
+                                 започва с анализ на
+                                 изходните данни, внедрени системи и обучение на
+                                 персонала</h2>
+                             <div class="date">20.05.2020г.</div>
+                             <span class="city">София<br><br></span>
+                             <p id="s1">
+                                 Кратко резюме...Кратко резюме...Кратко
+                                 резюме...Кратко
+                                 резюме...Кратко резюме...<br>Кратко
+                                 резюме...Кратко резюме...Кратко
+                                 резюме...<br>Кратко резюме...Кратко
+                                 резюме...Кратко резюме...Кратко
+                                 резюме...<br>Кратко резюме...Кратко
+                                 резюме...Кратко резюме...Кратко
+                                 резюме...</p>
+ 
+ 
+ 
+                             <div id="butonProcheti">
+                                 <p style="margin-top:10px;"> ПРОЧЕТИ</p>
+                             </div>
+                         </div>
+                     </div></a>
+                 </div>
+
+                 <div class="col-12 col-md-6">
+                    <a href="singleNews.html" class="news"><div class="card" id="karta">
+                         <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                         </iframe>
+                         <div class="card-body">
+                             <h2 class="card-title">Интеграцията на система КОХА
+                                 започва с анализ на
+                                 изходните данни, внедрени системи и обучение на
+                                 персонала</h2>
+                             <div class="date">20.05.2020г.</div>
+                             <span class="city">София<br><br></span>
+                             <p id="s1">
+                                 Кратко резюме...Кратко резюме...Кратко
+                                 резюме...Кратко
+                                 резюме...Кратко резюме...<br>Кратко
+                                 резюме...Кратко резюме...Кратко
+                                 резюме...<br>Кратко резюме...Кратко
+                                 резюме...Кратко резюме...Кратко
+                                 резюме...<br>Кратко резюме...Кратко
+                                 резюме...Кратко резюме...Кратко
+                                 резюме...</p>
+ 
+ 
+ 
+                             <div id="butonProcheti">
+                                 <p style="margin-top:10px;"> ПРОЧЕТИ</p>
+                             </div>
+                         </div>
+                     </div></a>
+                 </div>
+
+                 <div class="col-12 col-md-6">
+                    <a href="singleNews.html" class="news"><div class="card" id="karta">
+                         <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                         </iframe>
+                         <div class="card-body">
+                             <h2 class="card-title">Интеграцията на система КОХА
+                                 започва с анализ на
+                                 изходните данни, внедрени системи и обучение на
+                                 персонала</h2>
+                             <div class="date">20.05.2020г.</div>
+                             <span class="city">София<br><br></span>
+                             <p id="s1">
+                                 Кратко резюме...Кратко резюме...Кратко
+                                 резюме...Кратко
+                                 резюме...Кратко резюме...<br>Кратко
+                                 резюме...Кратко резюме...Кратко
+                                 резюме...<br>Кратко резюме...Кратко
+                                 резюме...Кратко резюме...Кратко
+                                 резюме...<br>Кратко резюме...Кратко
+                                 резюме...Кратко резюме...Кратко
+                                 резюме...</p>
+ 
+ 
+ 
+                             <div id="butonProcheti">
+                                 <p style="margin-top:10px;"> ПРОЧЕТИ</p>
+                             </div>
+                         </div>
+                     </div></a>
+                 </div>
+
+                 <div class="row" id="content-size">
+                    <h1><b>СВЪРЖЕТЕ СЕ С НАС <a id="formcontacts" href="">Към контакти</a></b></h1>
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                      <form>
+                        <div class="row">
+                          <div class="col-sm-12 col-md-6 col-lg-6" id="forma">
+                            <input type="text" name="Names" placeholder="Име и фамилия*" class="form-control" id="name" required>
+                          </div>
+                          <div class="col-sm-12 col-md-6 col-lg-6" id="forma">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="E-mail*" required>
+                          </div>
+                          <div class="col-sm-12 col-md-6 col-lg-6" id="forma">
+                            <input type="text" name="Phone" placeholder="Телефон*" class="form-control" id="phone" required>
+                          </div>
+                          <div class="col-sm-12 col-md-6 col-lg-6" id="forma">
+                            <input type="text" name="Theme" placeholder="Тема*" class="form-control" id="theme" required>
+                          </div>
+                          <div class="col-12" id="forma">
+                            <textarea name="Message" placeholder="Съобщение*" class="form-control" id="Messagebox"
+                              required></textarea>
+                          </div>
+                          <div class="col-12">
+                            <input type="checkbox" name="ToS" class="form-check-input" id="custom-check" required>
+                            <label class="form-check-label" for="custom-check">
+                              Default checkbox
+                            </label>
+                          </div>
+                          <div class="col-sm-12 col-md-6 col-lg-5">
+                            <!-- google recaptcha -->
+                          </div>
+                          <div class="col-sm-12 col-md-6 col-lg-7">
+                            <input type="submit" value="изпрати" class="btn-form-submit" id="submit">
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+              
+                    <div class="col-sm-12 col-md-12 col-lg-6" id="contact-container">
+                      <div class="phone-number-contact-container">
+                        <img src="images/form-tel.png" class="img-contact">
+                        <div class="phone-number-contact">
+                          <ul>
+                            <li class="tel-img"><a class="tel" href="tel:0894300985">+359 89 430 0985</a> </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+    </div>
+
+   
+         
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+
+    </body>
+
+</html>

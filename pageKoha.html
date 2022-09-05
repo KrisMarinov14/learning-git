@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="../styles/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+        <div class="container-fluid" id="header1">
+            <div id="header">
+                <div class="row">
+                    <div class="col-3 col-xl-3">
+                        <div id="logo"><a href="index.html"><img src="../images/logo.png"></a></div>  
+                        <div id="resp-logo"><a href="index.html"><img src="../images/resp-logo.png"></a></div>      
+                    </div>
+                    <div class="col-9 col-xl-9">
+                        <div class="row">
+                            <div id="topright">
+    
+                                <a href="allNews.html">Новини</a>
+                                
+                    
+                                <a class="search1" href=""><img class="search" src="../images/search.png" width="25"></a>
+                    
+                                <a class="search" href="">Търси</a>
+                                
+                    
+                                <a href=""><img class="tel" src="../images/tel.png" width="25"></a>
+                                <a class="telNumber" href="">+359 89 430 0985</a>
+                                
+                    
+                                <a href=""><img class="you" src="../images/youtube.png" width="25"></a>
+                                <a href=""><img class="face" src="../images/facebook.png" width="25"></a>
+                                <a href=""><img class="in" src="../images/in.png" width="25"></a>
+                                <a href=""><img class="mail" src="../images/mail.png" width="25"></a>
+                                <a href=""><img class="line" src="../images/line.png"></a>
+                                <a href=""><img class="EN" src="../images/EN.png" width="20"></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="menulinks">
+                                <a href="">ЗА НАС</a>
+                                <div class="menuline"></div>
+                                <a href="">СИСТЕМА КОХА</a>
+                                <div class="menuline"></div>
+                                <a href="">БИБЛИОГРАФСКИ СЪРВЪР</a>
+                                <div class="menuline"></div>
+                                <a href="">RFID ТЕХНОЛОГИИ</a>
+                                <div class="menuline"></div>
+                                <a href="">РЕАЛИЗАЦИИ</a>
+                                <div class="menuline"></div>
+                                <a href="">КОНТАКТИ</a>
+                            </div>
+                        </div>
+                        <div id="resp-images">
+                            <div id="resp-img1"><a href="index.html"><img src="../images/resp-tel.png"></a></div>
+                            <div id="resp-img2"><a href="index.html"><img src="../images/resp-search.png"></a></div>
+                           <div id="resp-img3"><a href="javascript:void(0);" onclick="HambMenu(),ImageChange()"><img src="../images/ham-menu.png"></a></div>
+                        </div>
+                            <div class="col-12">
+                           <div id="myLinks">
+                                    <div class="row"><a href="">ЗА НАС</a></div>
+                                    <div class="row"><a href="../pages/pageKoha.html">СИСТЕМА КОХА</a></div>
+                                    <div class="row"><a href="../pages/pageKoha.html">БИБЛИОГРАФСКИ СЪРВЪР</a></div>
+                                    <div class="row"><a href="../pages/pageKoha.html">RFID ТЕХНОЛОГИИ</a></div>
+                                    <div class="row"><a href="">РЕАЛИЗАЦИИ</a></div>
+                                    <div class="row"><a href="../pages/allNews.html">НОВИНИ</a></div>
+                                    <div class="row"><a href="../pages/contacts.html">КОНТАКТИ</a></div>
+                                </div>
+                            
+                        </div>
+                        </div> 
+                        </div>
+                </div>
+                    
+                </div>
+            
+        
+            
+        <script>
+            function HambMenu() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+              function ImageChange(){
+                const img= documnt.getElementById('resp-img3');
+                let toggle=true;
+                img.addEventListener('click',function(){
+                    toggle=!toggle;
+                    if(toggle){
+                        img.src='..\\images\\ham-menu.png'; }
+                        else {
+                            img.src='..\\images\\ham-menu-onclick.png';
+                        }
+                        
+                    })
+              }
+              
+            
+            
+            </script>
+        <div class="row">
+            <div class="col">
+              <div id="carousel-main" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../images/imgban1.jpg" class="d-block w-100">
+                    <div class="carousel-caption">
+                      <p>text1</p>
+                    </div>
+                    <div class="btn-info-position">
+                      <a class="btn-info" href="#">виж повече</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/imgban2.jpg" class="d-block w-100">
+                    <div class="carousel-caption">
+                      <p>text2</p>
+                    </div>
+                    <div class="btn-info-position">
+                      <a class="btn-info" href="#">виж повече</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/imgban3.jpg" class="d-block w-100">
+                    <div class="carousel-caption">
+                      <p>text3</p>
+                    </div>
+                    <div class="btn-info-position">
+                      <a class="btn-info" href="#">виж повече</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/imgban4.jpg" class="d-block w-100">
+                    <div class="carousel-caption">
+                      <p>text4</p>
+                    </div>
+                    <div class="btn-info-position">
+                      <a class="btn-info" href="#">виж повече</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/imgban5.jpg" class="d-block w-100">
+                    <div class="carousel-caption">
+                      <p>text5</p>
+                    </div>
+                    <div class="btn-info-position">
+                      <a class="btn-info" href="#">виж повече</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/imgban6.jpg" class="d-block w-100">
+                    <div class="carousel-caption">
+                      <p>text6</p>
+                    </div>
+                    <div class="btn-info-position">
+                      <a class="btn-info" href="#">виж повече</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/imgban7.jpg" class="d-block w-100">
+                    <div class="carousel-caption">
+                      <p>text7</p>
+                    </div>
+                    <div class="btn-info-position">
+                      <a class="btn-info" href="#">виж повече</a>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-main" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-main" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        <div class="row" id="content-size">
+
+            <div class="col-sm-12 col-md-12 col-lg-5" id="imgTabGallery">
+                <div class="viewgallery">
+                    <img src="../images/1.jpg" id="expandedImg1" onclick="openModal('myModal-1')">
+                </div>
+                <div id="myModal-1" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="../images/1.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="../images/2.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="../images/3.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="../images/4.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="../images/5.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="../images/6.jpg" style="width:100%">
+                        </div>
+
+                        <!-- Next/previous controls -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="carousel-gallery-container-1" class="carousel slide">
+                        <div class="carousel-inner" role="listbox" id="carousel-gallery">
+                            <div class="carousel-item active">
+                                <div class="col" id="gallery">
+                                    <img src="../images/1.jpg" onclick="imgGalleryTab1(this);currentSlide(1)">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col" id="gallery">
+                                    <img src="../images/2.jpg" onclick="imgGalleryTab1(this);currentSlide(2)">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col" id="gallery">
+                                    <img src="../images/3.jpg" onclick="imgGalleryTab1(this);currentSlide(3)">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col" id="gallery">
+                                    <img src="../images/4.jpg" onclick="imgGalleryTab1(this);currentSlide(4)">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col" id="gallery">
+                                    <img src="../images/5.jpg" onclick="imgGalleryTab1(this);currentSlide(5)">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col" id="gallery">
+                                    <img src="../images/6.jpg" onclick="imgGalleryTab1(this);currentSlide(6)">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carousel-gallery-container-1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carousel-gallery-container-1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-7">
+                <h1><b>Какво е Коха?</b></h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Risus commodo viverra maecenas accumsan lacus vel. Tortor consequat id porta
+                    nibh venenatis cras. Vestibulum morbi blandit cursus risus at. Est pellentesque elit ullamcorper
+                    dignissim cras tincidunt lobortis feugiat vivamus. Placerat in egestas erat imperdiet sed euismod
+                    nisi. Nisl suscipit adipiscing bibendum est ultricies integer. Id velit ut tortor pretium viverra
+                    suspendisse. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Ullamcorper eget nulla
+                    facilisi etiam dignissim diam. Donec adipiscing tristique risus nec feugiat in. Nunc sed blandit
+                    libero volutpat sed cras. Sagittis eu volutpat odio facilisis.</p>
+
+                <p> Rutrum quisque non tellus orci ac auctor. Phasellus vestibulum lorem sed risus ultricies tristique
+                    nulla aliquet. Cursus risus at ultrices mi tempus imperdiet nulla malesuada. Vel eros donec ac odio
+                    tempor orci dapibus ultrices in. Massa ultricies mi quis hendrerit dolor magna. Dignissim sodales ut
+                    eu sem integer vitae justo eget. Arcu non odio euismod lacinia at quis risus. Ac tortor dignissim
+                    convallis aenean. Feugiat vivamus at augue eget arcu dictum varius. Quisque egestas diam in arcu.
+                    Aliquet bibendum enim facilisis gravida neque. Placerat orci nulla pellentesque dignissim. Commodo
+                    sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Id donec ultrices
+                    tincidunt arcu non sodales neque sodales ut. Amet nulla facilisi morbi tempus iaculis urna id
+                    volutpat lacus. Malesuada proin libero nunc consequat interdum. Sed lectus vestibulum mattis
+                    ullamcorper velit. Bibendum at varius vel pharetra vel turpis nunc. Sagittis eu volutpat odio
+                    facilisis mauris sit amet massa. Mattis molestie a iaculis at erat pellentesque.</p>
+
+            </div>
+        </div>
+
+        <div class="row" id="content-size">
+            <div class="col-sm-12 col-md-12 col-lg-7">
+                <h1><b>Структура. Предимства</b></h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Risus commodo viverra maecenas accumsan lacus vel. Tortor consequat id porta
+                    nibh venenatis cras. Vestibulum morbi blandit cursus risus at. Est pellentesque elit ullamcorper
+                    dignissim cras tincidunt lobortis feugiat vivamus. Placerat in egestas erat imperdiet sed euismod
+                    nisi. Nisl suscipit adipiscing bibendum est ultricies integer. Id velit ut tortor pretium viverra
+                    suspendisse. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Ullamcorper eget nulla
+                    facilisi etiam dignissim diam. Donec adipiscing tristique risus nec feugiat in. Nunc sed blandit
+                    libero volutpat sed cras. Sagittis eu volutpat odio facilisis.</p>
+
+                <p> Rutrum quisque non tellus orci ac auctor. Phasellus vestibulum lorem sed risus ultricies tristique
+                    nulla aliquet. Cursus risus at ultrices mi tempus imperdiet nulla malesuada. Vel eros donec ac odio
+                    tempor orci dapibus ultrices in. Massa ultricies mi quis hendrerit dolor magna. Dignissim sodales ut
+                    eu sem integer vitae justo eget. Arcu non odio euismod lacinia at quis risus. Ac tortor dignissim
+                    convallis aenean. Feugiat vivamus at augue eget arcu dictum varius. Quisque egestas diam in arcu.
+                    Aliquet bibendum enim facilisis gravida neque. Placerat orci nulla pellentesque dignissim. Commodo
+                    sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Id donec ultrices
+                    tincidunt arcu non sodales neque sodales ut. Amet nulla facilisi morbi tempus iaculis urna id
+                    volutpat lacus. Malesuada proin libero nunc consequat interdum. Sed lectus vestibulum mattis
+                    ullamcorper velit. Bibendum at varius vel pharetra vel turpis nunc. Sagittis eu volutpat odio
+                    facilisis mauris sit amet massa. Mattis molestie a iaculis at erat pellentesque.</p>
+
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-5" id="gal-img">
+                <img src="../images/1.jpg">
+            </div>
+        </div>
+
+        <div class="row" id="content-size">
+            <div class="col-sm-12 col-md-12 col-lg-5" id="imgTabGallery">
+                <div class="viewgallery">
+                    <img src="../images/7.jpg" id="expandedImg2" onclick="openModal('myModal-2')">
+                </div>
+                <div id="myModal-2" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="../images/7.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="../images/8.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="../images/1.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="../images/2.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="../images/3.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="../images/4.jpg" style="width:100%">
+                        </div>
+
+                        <!-- Next/previous controls -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="carousel-gallery-container-2" class="carousel slide">
+                        <div class="carousel-inner" role="listbox" id="carousel-gallery">
+                            <div class="carousel-item active">
+                                <div class="col" id="gallery">
+                                    <img src="../images/7.jpg" onclick="imgGalleryTab2(this);currentSlide(7)">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col" id="gallery">
+                                    <img src="../images/8.jpg" onclick="imgGalleryTab2(this);currentSlide(8)">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col" id="gallery">
+                                    <img src="../images/1.jpg" onclick="imgGalleryTab2(this);currentSlide(9)">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col" id="gallery">
+                                    <img src="../images/2.jpg" onclick="imgGalleryTab2(this);currentSlide(10)">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col" id="gallery">
+                                    <img src="../images/3.jpg" onclick="imgGalleryTab2(this);currentSlide(11)">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col" id="gallery">
+                                    <img src="../images/4.jpg" onclick="imgGalleryTab2(this);currentSlide(12)">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carousel-gallery-container-2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carousel-gallery-container-2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-7">
+                <h1><b>Интеграция. Поддръжка</b></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Risus commodo viverra maecenas accumsan lacus vel. Tortor consequat id porta
+                    nibh venenatis cras. Vestibulum morbi blandit cursus risus at. Est pellentesque elit ullamcorper
+                    dignissim cras tincidunt lobortis feugiat vivamus. Placerat in egestas erat imperdiet sed euismod
+                    nisi. Nisl suscipit adipiscing bibendum est ultricies integer. Id velit ut tortor pretium viverra
+                    suspendisse. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Ullamcorper eget nulla
+                    facilisi etiam dignissim diam. Donec adipiscing tristique risus nec feugiat in. Nunc sed blandit
+                    libero volutpat sed cras. Sagittis eu volutpat odio facilisis.</p>
+
+                <p> Rutrum quisque non tellus orci ac auctor. Phasellus vestibulum lorem sed risus ultricies tristique
+                    nulla aliquet. Cursus risus at ultrices mi tempus imperdiet nulla malesuada. Vel eros donec ac odio
+                    tempor orci dapibus ultrices in. Massa ultricies mi quis hendrerit dolor magna. Dignissim sodales ut
+                    eu sem integer vitae justo eget. Arcu non odio euismod lacinia at quis risus. Ac tortor dignissim
+                    convallis aenean. Feugiat vivamus at augue eget arcu dictum varius. Quisque egestas diam in arcu.
+                    Aliquet bibendum enim facilisis gravida neque. Placerat orci nulla pellentesque dignissim. Commodo
+                    sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Id donec ultrices
+                    tincidunt arcu non sodales neque sodales ut. Amet nulla facilisi morbi tempus iaculis urna id
+                    volutpat lacus. Malesuada proin libero nunc consequat interdum. Sed lectus vestibulum mattis
+                    ullamcorper velit. Bibendum at varius vel pharetra vel turpis nunc. Sagittis eu volutpat odio
+                    facilisis mauris sit amet massa. Mattis molestie a iaculis at erat pellentesque.</p>
+
+            </div>
+
+        </div>
+
+        <!-- youtube video -->
+        <div class="row">
+            <div class="col" id="video2">
+                <span class="Present">ПРЕДСТВЯМЕ</span>
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                <h1> Заглавие към видеоновина </h1>
+                <p> Nullam id elementum dui. Vestibulum efficitur lacinia lobortis.
+                    Etiam hendrerit laoreet enim,
+                    vel porttitor orci semper pellentesque.
+                    In malesuada metus in augue pretium, non blandit ipsum vestibulum.
+
+                    Curabitur eget commodo lorem. Etiam gravida mattis tortor.
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                    per inceptos himenaeos. Aenean ullamcorper, nisi quis ultricies
+                    rutrum,
+                    ligula nisi vestibulum ligula, eget faucibus augue sem ac sapien.
+                    Vestibulum dictum libero vel augue facilisis, a sagittis justo
+                    consequat.
+                    <span class="video-text"></span>Sed porttitor fermentum semper. Donec a nibh sit amet massa
+                    efficitur
+                    semper.
+                    Etiam pellentesque augue ut lectus pulvinar, at efficitur enim tempus.
+                    Vestibulum pretium, lorem quis vulputate tincidunt, ipsum ex auctor
+                    quam,
+                    ut consequat eros leo id ipsum.</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- news section-->
+        <div class="row">
+            <div class="div" id="novini">
+
+                <div class="row">
+                    <h1><b>НОВИНИ</b> </h1>
+                </div>
+                <div class="row" id="red">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card" id="karta">
+                            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe>
+                            <div class="card-body">
+                                <h2 class="card-title">Интеграцията на система КОХА започва с анализ на
+                                    изходните данни, внедрени системи и обучение на персонала</h2>
+                                <div class="date">20.05.2020г.</div>
+                                <span class="city">София<br><br></span>
+                                <p id="s1">
+                                    Кратко резюме...Кратко резюме...Кратко резюме...Кратко
+                                    резюме...Кратко резюме...<br>Кратко резюме...Кратко резюме...Кратко
+                                    резюме...<br>Кратко резюме...Кратко резюме...Кратко резюме...Кратко
+                                    резюме...<br>Кратко резюме...Кратко резюме...Кратко резюме...Кратко
+                                    резюме...</p>
+
+
+
+                                <div id="butonProcheti">
+                                    <p style="margin-top:10px;"> ПРОЧЕТИ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card" id="karta1">
+                            <iframe height="440" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe>
+
+                            <div class="card-body">
+                                <h2 class="card-title">Интеграцията на система КОХА започва с анализ на
+                                    изходните данни, внедрени системи и обучение на персонала</h2>
+                                <p id="s1">20.05.2020г.<br>
+                                    София<br><br>
+                                    Кратко резюме...Кратко резюме...Кратко резюме...Кратко
+                                    резюме...Кратко резюме...<br>Кратко резюме...Кратко резюме...Кратко
+                                    резюме...<br>Кратко резюме...Кратко резюме...Кратко резюме...Кратко
+                                    резюме...<br>Кратко резюме...Кратко резюме...Кратко резюме...Кратко
+                                    резюме...</p>
+                                <div id="butonProcheti">
+                                    <p style="margin-top:10px;"> ПРОЧЕТИ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- certificate -->
+        <div class="row" id="content-size">
+            <h1><b>СЕРТИФИКАТИ</b></h1>
+
+            <div class="col-sm-12 col-md-12 col-lg" id="cert-img-size">
+                <div class="imgCert"><img src="../images/1.jpg" id="img-cert"></div>
+                <p><a class="cert-text" href="">Пълно име на сертификата</a></p>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg" id="cert-img-size">
+                <div class="imgCert"><img src="../images/1.jpg" id="img-cert"></div>
+                <p><a class="cert-text" href="">Пълно име на сертификата</a></p>
+            </div>
+        </div>
+
+        <!-- contacts -->
+        <div class="row" id="content-size">
+            <h1><b>СВЪРЖЕТЕ СЕ С НАС <a id="formcontacts" href="">Към контакти</a></b></h1>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <form>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-6" id="forma">
+                            <input type="text" name="Names" placeholder="Име и фамилия*" class="form-control" id="name"
+                                required>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6" id="forma">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="E-mail*"
+                                required>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6" id="forma">
+                            <input type="text" name="Phone" placeholder="Телефон*" class="form-control" id="phone"
+                                required>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6" id="forma">
+                            <input type="text" name="Theme" placeholder="Тема*" class="form-control" id="theme"
+                                required>
+                        </div>
+                        <div class="col-12" id="forma">
+                            <textarea name="Message" placeholder="Съобщение*" class="form-control" id="Messagebox"
+                                required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <input type="checkbox" name="ToS" class="form-check-input" id="custom-check" required>
+                            <label class="form-check-label" for="custom-check">
+                                Default checkbox
+                            </label>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-5">
+                            <!-- google recaptcha -->
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-7">
+                            <input type="submit" value="изпрати" class="btn-form-submit" id="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="phone-number-contact-container">
+                    <img src="../images/form-tel.png" class="img-contact">
+                    <div class="phone-number-contact">
+                        <ul>
+                            <li class="tel-img"><a class="tel" href="tel:0894300985">+359 89 430 0985</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- end of container -->
+
+        <script src="../javascript/js-main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

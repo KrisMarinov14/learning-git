@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="../styles/styles.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+
+    <div class="container-fluid" id="header1">
+      <div id="header">
+        <div class="row">
+          <div class="col-3 col-xl-3">
+            <div id="logo"><a href="index.html"><img src="../images/logo.png"></a></div>  
+            <div id="resp-logo"><a href="index.html"><img src="../images/resp-logo.png"></a></div>      
+          </div>
+          <div class="col-9 col-xl-9">
+            <div class="row">
+              <div id="topright">
+  
+                <a href="allNews.html">Новини</a>
+                
+          
+                <a class="search1" href=""><img class="search" src="../images/search.png" width="25"></a>
+          
+                <a class="search" href="">Търси</a>
+                
+          
+                <a href=""><img class="tel" src="../images/tel.png" width="25"></a>
+                <a class="telNumber" href="">+359 89 430 0985</a>
+                
+          
+                <a href=""><img class="you" src="../images/youtube.png" width="25"></a>
+                <a href=""><img class="face" src="../images/facebook.png" width="25"></a>
+                <a href=""><img class="in" src="../images/in.png" width="25"></a>
+                <a href=""><img class="mail" src="../images/mail.png" width="25"></a>
+                <a href=""><img class="line" src="../images/line.png"></a>
+                <a href=""><img class="EN" src="../images/EN.png" width="20"></a>
+              </div>
+            </div>
+            <div class="row">
+              <div id="menulinks">
+                <a href="">ЗА НАС</a>
+                <div class="menuline"></div>
+                <a href="">СИСТЕМА КОХА</a>
+                <div class="menuline"></div>
+                <a href="">БИБЛИОГРАФСКИ СЪРВЪР</a>
+                <div class="menuline"></div>
+                <a href="">RFID ТЕХНОЛОГИИ</a>
+                <div class="menuline"></div>
+                <a href="">РЕАЛИЗАЦИИ</a>
+                <div class="menuline"></div>
+                <a href="">КОНТАКТИ</a>
+              </div>
+            </div>
+            <div id="resp-images">
+              <div id="resp-img1"><a href="index.html"><img src="../images/resp-tel.png"></a></div>
+              <div id="resp-img2"><a href="index.html"><img src="../images/resp-search.png"></a></div>
+               <div id="resp-img3"><a href="javascript:void(0);" onclick="HambMenu(),ImageChange()"><img src="../images/ham-menu.png"></a></div>
+            </div>
+              <div class="col-12">
+               <div id="myLinks">
+                  <div class="row"><a href="">ЗА НАС</a></div>
+                  <div class="row"><a href="../pages/pageKoha.html">СИСТЕМА КОХА</a></div>
+                  <div class="row"><a href="../pages/pageKoha.html">БИБЛИОГРАФСКИ СЪРВЪР</a></div>
+                  <div class="row"><a href="../pages/pageKoha.html">RFID ТЕХНОЛОГИИ</a></div>
+                  <div class="row"><a href="">РЕАЛИЗАЦИИ</a></div>
+                  <div class="row"><a href="../pages/allNews.html">НОВИНИ</a></div>
+                  <div class="row"><a href="../pages/contacts.html">КОНТАКТИ</a></div>
+                </div>
+              
+            </div>
+            </div> 
+            </div>
+        </div>
+          
+        </div>
+      
+    
+      
+    <script>
+      function HambMenu() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+        x.style.display = "none";
+        } else {
+        x.style.display = "block";
+        }
+      }
+        function ImageChange(){
+        const img= documnt.getElementById('resp-img3');
+        let toggle=true;
+        img.addEventListener('click',function(){
+          toggle=!toggle;
+          if(toggle){
+            img.src='..\\images\\ham-menu.png'; }
+            else {
+              img.src='..\\images\\ham-menu-onclick.png';
+            }
+            
+          })
+        }
+        
+      
+      
+      </script>
+
+  <div class="container-fluid">
+    <div class="row certificates" id="content-size">
+      <h1><b>СЕРТИФИКАТИ</b></h1>
+
+      <div class="col-sm-12 col-md-6 col-lg" id="cert-img-size">
+        <a class="cert-text" href="">
+          <div class="imgCert"><img src="images/1.jpg" id="img-cert"></div>
+          <p>Пълно име на сертификата</p>
+        </a>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg" id="cert-img-size">
+        <a class="cert-text" href="">
+          <div class="imgCert"><img src="images/1.jpg" id="img-cert"></div>
+          <p>Пълно име на сертификата</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- contacts -->
+    <div class="row" id="content-size">
+      <h1><b>СВЪРЖЕТЕ СЕ С НАС <a id="formcontacts" href="">Към контакти</a></b></h1>
+      <div class="col-sm-12 col-md-12 col-lg-6">
+        <form>
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6" id="forma">
+              <input type="text" name="Names" placeholder="Име и фамилия*" class="form-control" id="name" required>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6" id="forma">
+              <input type="email" name="email" class="form-control" id="email" placeholder="E-mail*" required>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6" id="forma">
+              <input type="text" name="Phone" placeholder="Телефон*" class="form-control" id="phone" required>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6" id="forma">
+              <input type="text" name="Theme" placeholder="Тема*" class="form-control" id="theme" required>
+            </div>
+            <div class="col-12" id="forma">
+              <textarea name="Message" placeholder="Съобщение*" class="form-control" id="Messagebox"
+                required></textarea>
+            </div>
+            <div class="col-12">
+              <input type="checkbox" name="ToS" class="form-check-input" id="custom-check" required>
+              <label class="form-check-label" for="custom-check">
+                Default checkbox
+              </label>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-5">
+              <!-- google recaptcha -->
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-7">
+              <input type="submit" value="изпрати" class="btn-form-submit" id="submit">
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-6" id="contact-container">
+        <div class="phone-number-contact-container">
+          <img src="images/form-tel.png" class="img-contact">
+          <div class="phone-number-contact">
+            <ul>
+              <li class="tel-img"><a class="tel" href="tel:0894300985">+359 89 430 0985</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
